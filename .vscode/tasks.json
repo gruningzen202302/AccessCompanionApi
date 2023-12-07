@@ -36,6 +36,13 @@
                 "${workspaceFolder}/AccessCompanionApi.sln"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": ["test", "${workspaceFolder}/AccessCompanionApi.Test/AccessCompanionApi.Test.csproj"],
+            "problemMatcher": "$msCompile"
         }
     ]
 }

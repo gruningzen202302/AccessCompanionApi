@@ -27,6 +27,16 @@
             }
         },
         {
+            "name": ".NET Test Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/AccessCompanionApi.Test/bin/Debug/net8.0/AccessCompanionApi.Test.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
