@@ -1,4 +1,3 @@
-using System.Linq;
 using AccessCompanionApi.Domain;
 
 namespace AccessCompanionApi.Data;
