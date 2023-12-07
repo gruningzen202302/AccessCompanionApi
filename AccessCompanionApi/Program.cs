@@ -2,6 +2,9 @@ using AccessCompanionApi.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.SqlServer;
+using System.Security;
+using AccessCompanionApi.Abstractions;
+using AccessCompanionApi.Infrastructure;
 
 // void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext context)
 // {
@@ -37,6 +40,9 @@ var context = builder.Services.AddDbContext<AppDbContext>(options => {
     //options.EnableDetailedErrors();
 
 });
+
+// builder.Services.AddSingleton<IPermissionRepository, PermissionRepository>();
+// builder.Services.AddSingleton<IPermissionTypeRepository, PermissionTypeRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
