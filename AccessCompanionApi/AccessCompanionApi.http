@@ -1,0 +1,6 @@
+@AccessCompanionApi_HostAddress = http://localhost:5115
+
+GET {{AccessCompanionApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
