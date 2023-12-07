@@ -9,6 +9,7 @@ namespace AccessCompanionApi.Abstractions
 #endregion
 #region R
         IQueryable<T> ReadAll();
+        IQueryable<T> Read(Func<T, bool> predicate);
         T ReadById(int id);
 #endregion
 #region U

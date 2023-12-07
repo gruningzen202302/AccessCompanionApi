@@ -33,4 +33,9 @@ public class PermissionTypeRepository : IPermissionTypeRepository
     {
         throw new NotImplementedException();
     }
+
+    public IQueryable<PermissionType> Read(Func<PermissionType, bool> predicate)
+    {
+        throw new NotImplementedException();
+    }
 }
