@@ -30,7 +30,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 
 var context = builder.Services.AddDbContext<AppDbContext>(options => {
-    options.UseSqlServer(connectionString);
+    options.UseSqlServer(connectionString, sqlServerOptionsAction: sqlOptions => {
+        sqlOptions.EnableRetryOnFailure();
+    });
     //options.EnableSensitiveDataLogging();
     //options.EnableDetailedErrors();
 
