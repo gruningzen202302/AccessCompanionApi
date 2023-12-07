@@ -13,7 +13,7 @@ public class PermissionTypeShould
         Assert.True(200>smallNumber);
     }
     [Fact]
-    public void ReadPermissionType__PermissionExists__ReturnsPermission()
+    public void ReadPermissionType__PermissionExists__ReturnsPermissionType()
     {
         // Arrange
         var permissionType = new PermissionType() { Description = "Turn to use coworking area"};
@@ -22,13 +22,5 @@ public class PermissionTypeShould
         var permissionRepository = new Mock<IPermissionTypeRepository>();
         permissionRepository.Setup(x => x.ReadById(0)).Returns(permissionType);
         Assert.Equal("Turn to use coworking area", permissionRepository.Object.ReadById(0).Description);
-        
-        // var permissionTypeService = new PermissionTypeService(permissionTypeRepository.Object);
-
-        // // Act
-        // var result = permissionTypeService.GetPermission(permissionType);
-
-        // // Assert
-        // Assert.Equal(permissionType, result);
     }
 }

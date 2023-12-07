@@ -19,7 +19,7 @@ public class AppDbContext : DbContext, IDbContext{
             // {
             //     Database.Migrate();
             // }
-            //DbInitializer.Seed(this);
+            DbInitializer.Seed(this);
             
         }
     #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
@@ -30,5 +30,30 @@ public class AppDbContext : DbContext, IDbContext{
         {
             get => PermissionTypes;
             set => PermissionTypes = (DbSet<PermissionType>)value;
+        }
+        public DbSet<Permission> Permissions { get; set; }
+        IQueryable<Permission> IDbContext.Permissions
+        {
+            get => Permissions;
+            set => Permissions = (DbSet<Permission>)value;
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            
+            modelBuilder.Entity<PermissionType>()
+                .HasMany(p => p.Permissions)
+                .WithOne(p => p.PermissionType)
+                .HasForeignKey(p => p.PermissionTypeId);
+            
+            modelBuilder.Entity<PermissionType>()
+                .HasData(
+                    new PermissionType { 
+                        Description = "Permision used by default when no other type is specified" 
+                        },
+                    new PermissionType { 
+                        Description = "Permission used to access the coworking area" 
+                        }
+                );
         }
 }

@@ -7,18 +7,16 @@ namespace AccessCompanionApi.Data
     {
         public static void Seed(AppDbContext context)
         {
-            if (!context.PermissionTypes.ToList().Any())
+            if (context.PermissionTypes.ToList().Count == 0)
             {
                 var permissionTypes = new PermissionType[]
                 {
-                    new PermissionType
+                    new()
                     {
-                        Id = 1,
                         Description = "Permission used by default when no other type is specified",
                     },
-                    new PermissionType
+                    new()
                     {
-                        Id = 2,
                         Description = "Permission used to access the coworking area",
                     }
                 };

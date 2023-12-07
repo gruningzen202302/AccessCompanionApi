@@ -1,4 +1,6 @@
-@workspace I need to create a unit test project for this api using xunit
+# Console commands
+
+ xunit
 
 dotnet new xunit -n AccessCompanionApi.Tests
 

@@ -16,6 +16,7 @@ public class MockContext : DbContext, IDbContext
         }
     }
     public IQueryable<PermissionType> PermissionTypes { get; set ; }
+    public IQueryable<Permission> Permissions { get; set ; }
 
     public MockContext()
     {
