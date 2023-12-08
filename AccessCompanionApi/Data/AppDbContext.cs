@@ -1,7 +1,7 @@
 using System.Linq;
 using AccessCompanionApi.Domain;
 using Microsoft.EntityFrameworkCore;
-//using Microsoft.EntityFrameworkCore.Migrations;//TODO uncomment after the first migration (this creates the folder)
+using Microsoft.EntityFrameworkCore.Migrations;
 namespace AccessCompanionApi.Data;
 
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.

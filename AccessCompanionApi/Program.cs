@@ -14,9 +14,15 @@ Environment.SetEnvironmentVariable(
     false.ToString()
     );
 
-static IHostBuilder CreateHostBuilder(string[] args) =>Host
-    .CreateDefaultBuilder(args)
-    .UseSerilog();
+// static IHostBuilder CreateHostBuilder(string[] args) =>Host
+//     .CreateDefaultBuilder(args)
+//     .UseSerilog();
+
+
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog();
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo
@@ -24,20 +30,6 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 Log.Information("USING SERILOG");
-// try
-// {
-//     CreateHostBuilder(args).Build().Run();
-// }
-// catch (Exception ex)
-// {
-//     Log.Fatal(ex, "Application start-up failed");
-// }
-// finally
-// {
-//     Log.CloseAndFlush();
-// }
-
-var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(options=>{
     options.AddPolicy("AllowXamarin", builder =>{
@@ -49,10 +41,14 @@ builder.Services.AddCors(options=>{
 });
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionStringFromContainer = builder.Configuration.GetConnectionString("ContainerConnection");
 
 var context = builder.Services.AddDbContext<AppDbContext>(options => {
-    options.UseSqlServer(connectionString, sqlServerOptionsAction: sqlOptions => {
-        sqlOptions.EnableRetryOnFailure();
+    options.UseSqlServer(
+        connectionStringFromContainer,
+        //connectionString, 
+        sqlServerOptionsAction: sqlOptions => {
+            sqlOptions.EnableRetryOnFailure();
     });
 });
 
