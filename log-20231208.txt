@@ -1,0 +1,33 @@
+2023-12-08 05:37:11.043 -03:00 [INF] USING SERILOG
+2023-12-08 05:37:12.026 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-08 05:37:12.029 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-08 05:37:12.031 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-08 05:37:12.031 -03:00 [INF] Hosting environment: Development
+2023-12-08 05:37:12.031 -03:00 [INF] Content root path: C:\Users\qimon\source\repos\AccessCompanionApi\AccessCompanionApi
+2023-12-08 05:37:12.483 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-08 05:37:12.564 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 84.7169ms
+2023-12-08 05:37:12.581 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-08 05:37:27.518 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/rest/Permission - null null
+2023-12-08 05:37:27.523 -03:00 [INF] Executing endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:27.538 -03:00 [INF] Route matched with {action = "Get", controller = "Permission"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[AccessCompanionApi.Domain.Permission] Get() on controller AccessCompanionApi.Controllers.PermissionController (AccessCompanionApi).
+2023-12-08 05:37:27.540 -03:00 [WRN] GET ENDPOINT-------------------
+2023-12-08 05:37:27.546 -03:00 [INF] Executing ObjectResult, writing value of type 'AccessCompanionApi.Domain.Permission[]'.
+2023-12-08 05:37:27.582 -03:00 [INF] Executed action AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi) in 38.1226ms
+2023-12-08 05:37:27.582 -03:00 [INF] Executed endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:27.582 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/rest/Permission - 200 null application/json; charset=utf-8 64.3797ms
+2023-12-08 05:37:33.329 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/rest/Permission - null null
+2023-12-08 05:37:33.331 -03:00 [INF] Executing endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:33.332 -03:00 [INF] Route matched with {action = "Get", controller = "Permission"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[AccessCompanionApi.Domain.Permission] Get() on controller AccessCompanionApi.Controllers.PermissionController (AccessCompanionApi).
+2023-12-08 05:37:33.332 -03:00 [WRN] GET ENDPOINT-------------------
+2023-12-08 05:37:33.332 -03:00 [INF] Executing ObjectResult, writing value of type 'AccessCompanionApi.Domain.Permission[]'.
+2023-12-08 05:37:33.333 -03:00 [INF] Executed action AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi) in 1.2884ms
+2023-12-08 05:37:33.333 -03:00 [INF] Executed endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:33.334 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/rest/Permission - 200 null application/json; charset=utf-8 4.7437ms
+2023-12-08 05:37:52.674 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/rest/Permission - null null
+2023-12-08 05:37:52.675 -03:00 [INF] Executing endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:52.675 -03:00 [INF] Route matched with {action = "Get", controller = "Permission"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[AccessCompanionApi.Domain.Permission] Get() on controller AccessCompanionApi.Controllers.PermissionController (AccessCompanionApi).
+2023-12-08 05:37:52.675 -03:00 [WRN] GET ENDPOINT-------------------
+2023-12-08 05:37:52.675 -03:00 [INF] Executing ObjectResult, writing value of type 'AccessCompanionApi.Domain.Permission[]'.
+2023-12-08 05:37:52.676 -03:00 [INF] Executed action AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi) in 0.662ms
+2023-12-08 05:37:52.676 -03:00 [INF] Executed endpoint 'AccessCompanionApi.Controllers.PermissionController.Get (AccessCompanionApi)'
+2023-12-08 05:37:52.677 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/rest/Permission - 200 null application/json; charset=utf-8 2.57ms

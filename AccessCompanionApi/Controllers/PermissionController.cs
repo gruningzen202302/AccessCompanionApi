@@ -6,7 +6,7 @@ using Serilog;
 namespace AccessCompanionApi.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/rest/[controller]")]
     public class PermissionController : ControllerBase
     {
         private static readonly string[] PermissionTypeDescriptions = new[]

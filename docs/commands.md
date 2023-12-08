@@ -18,3 +18,9 @@ ps2
 
 docker-compose up -d
 docker-compose stop
+
+## cURL
+
+curl -X 'GET' \
+  'https://localhost:7179/rest/Permission' \
+  -H 'accept: text/plain'

@@ -26,8 +26,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog();
 
 Log.Logger = new LoggerConfiguration()
-    .WriteTo
-    .Console()
+    .WriteTo.Console()
+    .WriteTo.File("../log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 Log.Information("USING SERILOG");
