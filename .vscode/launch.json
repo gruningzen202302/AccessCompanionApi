@@ -5,7 +5,7 @@
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
-            "name": ".NET Core Launch (web)",
+            "name": "NET8 (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
@@ -26,6 +26,31 @@
                 "/Views": "${workspaceFolder}/Views"
             }
         },
+        {
+            "name": "NET OpenAPI Debug",
+            "type": "chrome",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "url": "https://localhost:7179/swagger/index.html",
+            "webRoot": "${workspaceFolder}/AccessCompanionApi",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start chrome --incognito --remote-debugging-port=9222 ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open",
+                    "args": "-a Google Chrome --args --incognito --remote-debugging-port=9222 ${auto-detect-url}"
+                },
+                "linux": {
+                    "command": "google-chrome",
+                    "args": "--incognito --remote-debugging-port=9222 ${auto-detect-url}"
+                }
+            }
+        }
+        ,
         {
             "name": ".NET Test Debug",
             "type": "coreclr",

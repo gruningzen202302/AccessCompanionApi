@@ -1,6 +1,7 @@
 using AccessCompanionApi.Abstractions;
 using AccessCompanionApi.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace AccessCompanionApi.Controllers
 {
@@ -27,6 +28,7 @@ namespace AccessCompanionApi.Controllers
         [HttpGet(Name = "GetPermissions")]
         public IEnumerable<Permission> Get()
         {
+            _logger.LogWarning("GET ENDPOINT-------------------");
             int id = 65;
             return Enumerable
                 .Range(1, 5)
