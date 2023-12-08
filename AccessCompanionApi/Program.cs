@@ -7,6 +7,7 @@ using AccessCompanionApi.Abstractions;
 using AccessCompanionApi.Infrastructure;
 using Serilog;
 using Microsoft.AspNetCore.Builder;
+using AccessCompanionApi.GraphQl;
 
 
 Environment.SetEnvironmentVariable(
@@ -31,6 +32,10 @@ Log.Logger = new LoggerConfiguration()
 
 Log.Information("USING SERILOG");
 
+builder.Services
+    .AddGraphQLServer()
+    .AddQueryType<Query>();
+
 builder.Services.AddCors(options=>{
     options.AddPolicy("AllowXamarin", builder =>{
         builder
@@ -51,7 +56,7 @@ var context = builder.Services.AddDbContext<AppDbContext>(options => {
             sqlOptions.EnableRetryOnFailure();
     });
 });
-
+builder.Services.AddScoped<IDbContext, AppDbContext>();
 // builder.Services.AddSingleton<IPermissionRepository, PermissionRepository>();
 // builder.Services.AddSingleton<IPermissionTypeRepository, PermissionTypeRepository>();
 
@@ -61,19 +66,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
+app.UseRouting();
+
+app.UseEndpoints(endpoints => endpoints.MapGraphQL());
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
-
-app.Run();
-
-app.UseHttpsRedirection();
-
 
 app.Run();

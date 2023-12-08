@@ -2,4 +2,7 @@
 
 This is the Application Programming Interface (API) for the Access Companion app.
 
-![Logo](./assets/swagger-logo-png.png)
+<p float="left">
+    <img src="./assets/swagger-logo-png.png" width="400" />
+    <img src="./assets/index-graph.jpeg" width="400" /> 
+</p>
