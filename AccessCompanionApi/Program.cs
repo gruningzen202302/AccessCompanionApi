@@ -27,7 +27,7 @@ builder.Host.UseSerilog();
 int sessionCount = 0;
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(outputTemplate: " 🛜  {Message:lj}{NewLine}{Exception}")
-    .WriteTo.File("../log-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("../logs/log-.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 Log.Information("USING SERILOG");
