@@ -44,3 +44,9 @@ curl -X 'GET' \
   --output-document \
 
 - <https://localhost:7179/graphql/>
+
+## Entity Framwork tool
+
+dotnet tool install --global dotnet-ef
+
+dotnet tool update --global dotnet-ef
