@@ -28,7 +28,9 @@ Log.Information("USING SERILOG");
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddProjections()
+    ;
 
 builder.Services.AddCors(options=>{
     options.AddPolicy("AllowXamarin", builder =>{

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccessCompanionApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231209203208_feat_add_seed_registers_related_to_previus_registers")]
-    partial class feat_add_seed_registers_related_to_previus_registers
+    [Migration("20231209210353_feat_add_seed_registers")]
+    partial class feat_add_seed_registers
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

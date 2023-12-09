@@ -318,3 +318,389 @@ ORDER BY [MigrationId];
 2023-12-09 17:34:11.442 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
 VALUES (N'20231209203208_feat_add_seed_registers_related_to_previus_registers', N'8.0.0');
+2023-12-09 17:58:50.845 -03:00 [INF] USING SERILOG
+2023-12-09 17:58:51.411 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 17:58:51.412 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 17:58:51.413 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 17:58:51.414 -03:00 [INF] Hosting environment: Development
+2023-12-09 17:58:51.414 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 17:58:51.791 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 17:58:51.815 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.7958ms
+2023-12-09 17:58:51.822 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 17:59:20.827 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 17:59:20.864 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 17:59:21.296 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 17:59:21.323 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 495.7265ms
+2023-12-09 18:03:52.349 -03:00 [INF] USING SERILOG
+2023-12-09 18:04:03.780 -03:00 [INF] USING SERILOG
+2023-12-09 18:04:04.598 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-09 18:04:04.626 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-09 18:04:04.628 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-09 18:04:04.630 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-09 18:04:04.645 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-12-09 18:04:04.660 -03:00 [INF] Applying migration '20231209210353_feat_add_seed_registers'.
+2023-12-09 18:04:04.716 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231209210353_feat_add_seed_registers', N'8.0.0');
+2023-12-09 18:17:17.441 -03:00 [INF] USING SERILOG
+2023-12-09 18:17:18.008 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 18:17:18.010 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 18:17:18.011 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:17:18.011 -03:00 [INF] Hosting environment: Development
+2023-12-09 18:17:18.011 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 18:17:18.396 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 18:17:18.419 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 23.5895ms
+2023-12-09 18:17:18.425 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 18:19:34.632 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 131
+2023-12-09 18:19:34.645 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:19:36.190 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description]
+FROM [PermissionTypes] AS [p]
+2023-12-09 18:19:36.255 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:19:36.261 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1629.5473ms
+2023-12-09 18:19:36.477 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 18:19:36.479 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:19:36.506 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:19:36.507 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 29.9159ms
+2023-12-09 18:22:43.711 -03:00 [INF] USING SERILOG
+2023-12-09 18:22:44.326 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 18:22:44.328 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 18:22:44.329 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:22:44.329 -03:00 [INF] Hosting environment: Development
+2023-12-09 18:22:44.329 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 18:22:44.773 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 18:22:44.826 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 55.2242ms
+2023-12-09 18:22:44.839 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 18:49:49.340 -03:00 [INF] USING SERILOG
+2023-12-09 18:49:49.886 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 18:49:49.888 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 18:49:49.889 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:49:49.889 -03:00 [INF] Hosting environment: Development
+2023-12-09 18:49:49.889 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 18:49:50.204 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 18:49:50.227 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.3972ms
+2023-12-09 18:49:50.233 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 18:51:15.377 -03:00 [INF] USING SERILOG
+2023-12-09 18:51:16.061 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 18:51:16.063 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 18:51:16.064 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:51:16.064 -03:00 [INF] Hosting environment: Development
+2023-12-09 18:51:16.064 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 18:51:16.437 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 18:51:16.462 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 25.1092ms
+2023-12-09 18:51:16.469 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 18:51:35.090 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 131
+2023-12-09 18:51:35.104 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:35.375 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:35.378 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Projection provider not found.
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.<>c.<GetProjectionConvention>b__1_0()
+   at HotChocolate.Types.Descriptors.DescriptorContext.GetConventionOrDefault[T](Func`1 defaultConvention, String scope)
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.GetProjectionConvention(IDescriptorContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.CompileMiddleware(Type type, ObjectFieldDefinition definition, FieldMiddlewareDefinition placeholder, ITypeCompletionContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.<>c__DisplayClass4_1.<UseProjection>b__3(ITypeCompletionContext c, ObjectFieldDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration`1.<>c__DisplayClass0_0.<.ctor>b__0(ITypeCompletionContext c, IDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration.Configure(ITypeCompletionContext context)
+   at HotChocolate.Types.TypeSystemObjectBase`1.ExecuteConfigurations(ITypeCompletionContext context, TDefinition definition, ApplyConfigurationOn on)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.CompleteType(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>b__30_0(RegisteredType type)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyFulfilled fulfilled, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.HotChocolate.ISchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(ConfigurationContext context, RequestExecutorSetup setup, RequestExecutorOptions executorOptions, IServiceProvider schemaServices, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(ConfigurationContext context, RequestExecutorSetup setup, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass19_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-09 18:51:35.399 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null text/plain; charset=utf-8 309.5468ms
+2023-12-09 18:51:35.640 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 18:51:35.642 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:35.650 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:35.650 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Projection provider not found.
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.<>c.<GetProjectionConvention>b__1_0()
+   at HotChocolate.Types.Descriptors.DescriptorContext.GetConventionOrDefault[T](Func`1 defaultConvention, String scope)
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.GetProjectionConvention(IDescriptorContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.CompileMiddleware(Type type, ObjectFieldDefinition definition, FieldMiddlewareDefinition placeholder, ITypeCompletionContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.<>c__DisplayClass4_1.<UseProjection>b__3(ITypeCompletionContext c, ObjectFieldDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration`1.<>c__DisplayClass0_0.<.ctor>b__0(ITypeCompletionContext c, IDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration.Configure(ITypeCompletionContext context)
+   at HotChocolate.Types.TypeSystemObjectBase`1.ExecuteConfigurations(ITypeCompletionContext context, TDefinition definition, ApplyConfigurationOn on)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.CompleteType(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>b__30_0(RegisteredType type)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyFulfilled fulfilled, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.HotChocolate.ISchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(ConfigurationContext context, RequestExecutorSetup setup, RequestExecutorOptions executorOptions, IServiceProvider schemaServices, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(ConfigurationContext context, RequestExecutorSetup setup, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass19_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-09 18:51:35.652 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null text/plain; charset=utf-8 11.7213ms
+2023-12-09 18:51:56.985 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 131
+2023-12-09 18:51:56.987 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:57.013 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:57.014 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Projection provider not found.
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.<>c.<GetProjectionConvention>b__1_0()
+   at HotChocolate.Types.Descriptors.DescriptorContext.GetConventionOrDefault[T](Func`1 defaultConvention, String scope)
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.GetProjectionConvention(IDescriptorContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.CompileMiddleware(Type type, ObjectFieldDefinition definition, FieldMiddlewareDefinition placeholder, ITypeCompletionContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.<>c__DisplayClass4_1.<UseProjection>b__3(ITypeCompletionContext c, ObjectFieldDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration`1.<>c__DisplayClass0_0.<.ctor>b__0(ITypeCompletionContext c, IDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration.Configure(ITypeCompletionContext context)
+   at HotChocolate.Types.TypeSystemObjectBase`1.ExecuteConfigurations(ITypeCompletionContext context, TDefinition definition, ApplyConfigurationOn on)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.CompleteType(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>b__30_0(RegisteredType type)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyFulfilled fulfilled, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.HotChocolate.ISchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(ConfigurationContext context, RequestExecutorSetup setup, RequestExecutorOptions executorOptions, IServiceProvider schemaServices, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(ConfigurationContext context, RequestExecutorSetup setup, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass19_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-09 18:51:57.022 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null text/plain; charset=utf-8 36.8873ms
+2023-12-09 18:51:57.247 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 18:51:57.247 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:57.253 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:51:57.253 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Projection provider not found.
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.<>c.<GetProjectionConvention>b__1_0()
+   at HotChocolate.Types.Descriptors.DescriptorContext.GetConventionOrDefault[T](Func`1 defaultConvention, String scope)
+   at HotChocolate.Data.ProjectionDescriptorContextExtensions.GetProjectionConvention(IDescriptorContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.CompileMiddleware(Type type, ObjectFieldDefinition definition, FieldMiddlewareDefinition placeholder, ITypeCompletionContext context, String scope)
+   at HotChocolate.Types.ProjectionObjectFieldDescriptorExtensions.<>c__DisplayClass4_1.<UseProjection>b__3(ITypeCompletionContext c, ObjectFieldDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration`1.<>c__DisplayClass0_0.<.ctor>b__0(ITypeCompletionContext c, IDefinition d)
+   at HotChocolate.Types.Descriptors.Definitions.CompleteConfiguration.Configure(ITypeCompletionContext context)
+   at HotChocolate.Types.TypeSystemObjectBase`1.ExecuteConfigurations(ITypeCompletionContext context, TDefinition definition, ApplyConfigurationOn on)
+   at HotChocolate.Types.TypeSystemObjectBase`1.CompleteType(ITypeCompletionContext context)
+   at HotChocolate.Configuration.TypeInitializer.CompleteType(RegisteredType registeredType)
+   at HotChocolate.Configuration.TypeInitializer.<CompleteTypes>b__30_0(RegisteredType type)
+   at HotChocolate.Configuration.TypeInitializer.ProcessTypes(TypeDependencyFulfilled fulfilled, Func`2 action)
+   at HotChocolate.Configuration.TypeInitializer.CompleteTypes()
+   at HotChocolate.Configuration.TypeInitializer.Initialize()
+   at HotChocolate.SchemaBuilder.Setup.InitializeTypes(SchemaBuilder builder, IDescriptorContext context, IReadOnlyList`1 types)
+   at HotChocolate.SchemaBuilder.Setup.Create(SchemaBuilder builder, LazySchema lazySchema, IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.SchemaBuilder.HotChocolate.ISchemaBuilder.Create(IDescriptorContext context)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaAsync(ConfigurationContext context, RequestExecutorSetup setup, RequestExecutorOptions executorOptions, IServiceProvider schemaServices, TypeModuleChangeMonitor typeModuleChangeMonitor, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.CreateSchemaServicesAsync(ConfigurationContext context, RequestExecutorSetup setup, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorNoLockAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorResolver.GetRequestExecutorAsync(String schemaName, CancellationToken cancellationToken)
+   at HotChocolate.Execution.RequestExecutorProxy.GetRequestExecutorAsync(CancellationToken cancellationToken)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.HandleRequestAsync(HttpContext context)
+   at HotChocolate.AspNetCore.HttpPostMiddlewareBase.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Builder.EndpointRouteBuilderExtensions.<>c__DisplayClass19_0.<<UseCancellation>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-09 18:51:57.255 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null text/plain; charset=utf-8 8.431ms
+2023-12-09 18:52:27.536 -03:00 [INF] USING SERILOG
+2023-12-09 18:52:28.130 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 18:52:28.132 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 18:52:28.133 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:52:28.133 -03:00 [INF] Hosting environment: Development
+2023-12-09 18:52:28.133 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 18:52:28.572 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 18:52:28.596 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.7627ms
+2023-12-09 18:52:28.604 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 18:52:41.511 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 131
+2023-12-09 18:52:41.547 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:52:43.284 -03:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p0].[Id], [p0].[PermissionDay]
+FROM [PermissionTypes] AS [p]
+LEFT JOIN [Permissions] AS [p0] ON [p].[Id] = [p0].[PermissionTypeId]
+ORDER BY [p].[Id]
+2023-12-09 18:52:43.336 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:52:43.343 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1832.3189ms
+2023-12-09 18:52:43.655 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 18:52:43.656 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:52:43.682 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:52:43.682 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 27.29ms
+2023-12-09 18:54:25.741 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 171
+2023-12-09 18:54:25.750 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:54:26.017 -03:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description], [p0].[Id], [p0].[EmployeeForename], [p0].[EmployeeSurname], [p0].[PermissionDay]
+FROM [PermissionTypes] AS [p]
+LEFT JOIN [Permissions] AS [p0] ON [p].[Id] = [p0].[PermissionTypeId]
+ORDER BY [p].[Id]
+2023-12-09 18:54:26.021 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:54:26.021 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 280.7476ms
+2023-12-09 18:54:26.516 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 18:54:26.516 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:54:26.524 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:54:26.525 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 8.8722ms
+2023-12-09 18:55:14.192 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 18:55:14.221 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 18:55:14.273 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 18:55:14.273 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 130.4091ms
+2023-12-09 18:55:14.647 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 18:55:14.648 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:55:14.700 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 18:55:14.701 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 78.8584ms
+2023-12-09 19:08:07.049 -03:00 [INF] USING SERILOG
+2023-12-09 19:08:07.620 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 19:08:07.622 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 19:08:07.623 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:08:07.623 -03:00 [INF] Hosting environment: Development
+2023-12-09 19:08:07.623 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 19:08:08.010 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 19:08:08.033 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.4045ms
+2023-12-09 19:08:08.040 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 19:08:15.301 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 19:08:15.310 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 19:08:15.342 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 19:08:15.342 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 41.4461ms
+2023-12-09 19:08:15.637 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 19:08:15.639 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:08:16.089 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:08:16.090 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 453.8129ms
+2023-12-09 19:10:50.723 -03:00 [INF] USING SERILOG
+2023-12-09 19:10:51.337 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 19:10:51.339 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 19:10:51.340 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:10:51.340 -03:00 [INF] Hosting environment: Development
+2023-12-09 19:10:51.341 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 19:10:51.878 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 19:10:51.934 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 56.2271ms
+2023-12-09 19:10:51.977 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 19:16:52.400 -03:00 [INF] USING SERILOG
+2023-12-09 19:16:53.105 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 19:16:53.107 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 19:16:53.108 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:16:53.108 -03:00 [INF] Hosting environment: Development
+2023-12-09 19:16:53.108 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 19:16:53.510 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 19:16:53.538 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 28.244ms
+2023-12-09 19:16:53.545 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 19:17:04.581 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 179
+2023-12-09 19:17:04.591 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:17:05.976 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description]
+FROM [PermissionTypes] AS [p]
+2023-12-09 19:17:06.038 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:17:06.045 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1464.2779ms
+2023-12-09 19:17:06.222 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:17:06.224 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:17:06.253 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:17:06.254 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 31.2309ms
+2023-12-09 19:18:19.638 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 19:18:19.650 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 19:18:19.703 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 19:18:19.703 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 127.5862ms
+2023-12-09 19:18:19.958 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 19:18:19.959 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:18:20.073 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:18:20.073 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 114.9836ms
+2023-12-09 19:18:37.900 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 19:18:37.906 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 19:18:37.907 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 19:18:37.907 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 8.6245ms
+2023-12-09 19:18:38.026 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 19:18:38.041 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:18:38.101 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:18:38.102 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 76.1431ms
+2023-12-09 19:20:27.486 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:20:27.514 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:20:27.570 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:20:27.571 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 84.4295ms
+2023-12-09 19:20:31.317 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:20:31.318 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:20:31.345 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:20:31.350 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 33.2708ms
+2023-12-09 19:21:30.165 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 141
+2023-12-09 19:21:30.169 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:21:30.571 -03:00 [INF] Executed DbCommand (121ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[PermissionDay], [p].[EmployeeSurname], CAST(1 AS bit), [p0].[Description]
+FROM [Permissions] AS [p]
+INNER JOIN [PermissionTypes] AS [p0] ON [p].[PermissionTypeId] = [p0].[Id]
+2023-12-09 19:21:30.579 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:21:30.580 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 414.9847ms
+2023-12-09 19:21:30.743 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:21:30.743 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:21:30.745 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:21:30.746 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 3.0131ms
+2023-12-09 19:23:28.763 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:23:28.765 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:28.807 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:28.808 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 45.2606ms
+2023-12-09 19:23:33.044 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:23:33.044 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:33.049 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:33.050 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 5.3703ms
+2023-12-09 19:23:35.375 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 179
+2023-12-09 19:23:35.398 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:35.698 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Description]
+FROM [PermissionTypes] AS [p]
+2023-12-09 19:23:35.699 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:35.699 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 324.4947ms
+2023-12-09 19:23:35.841 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:23:35.842 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:35.896 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:35.897 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 55.8822ms
+2023-12-09 19:23:43.182 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:23:43.187 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:43.317 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:43.318 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 136.354ms
+2023-12-09 19:23:45.454 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 141
+2023-12-09 19:23:45.454 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:45.586 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[PermissionDay], [p].[EmployeeSurname], CAST(1 AS bit), [p0].[Description]
+FROM [Permissions] AS [p]
+INNER JOIN [PermissionTypes] AS [p0] ON [p].[PermissionTypeId] = [p0].[Id]
+2023-12-09 19:23:45.587 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:45.588 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 134.3364ms
+2023-12-09 19:23:45.767 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-09 19:23:45.767 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:45.772 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 19:23:45.773 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 5.6165ms
