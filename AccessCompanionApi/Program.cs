@@ -16,12 +16,6 @@ Environment.SetEnvironmentVariable(
     false.ToString()
     );
 
-// static IHostBuilder CreateHostBuilder(string[] args) =>Host
-//     .CreateDefaultBuilder(args)
-//     .UseSerilog();
-
-
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog();
@@ -57,11 +51,8 @@ var context = builder.Services.AddDbContext<AppDbContext>(options => {
     });
 });
 builder.Services.AddScoped<IDbContext, AppDbContext>();
-// builder.Services.AddSingleton<IPermissionRepository, PermissionRepository>();
-// builder.Services.AddSingleton<IPermissionTypeRepository, PermissionTypeRepository>();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
@@ -74,23 +65,10 @@ app.UseEndpoints(endpoints =>
     endpoints.MapGraphQLVoyager("ui/voyager");
 });
 
-
-//app.UseEndpoints(endpoints => endpoints.MapGraphQL());
-
-
-//app.UseGraphQLVoyager();//path: "/voyager", options: new VoyagerOptions());
-// new GraphQLVoyagerOptions(){
-//     GraphQLEndPoint = "/graphql",
-//     Path = "/voyager"
-// }
-//);
-
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
-
-//app.UseAuthorization();
 
 app.MapControllers();
 
