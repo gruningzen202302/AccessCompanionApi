@@ -22,5 +22,25 @@ docker-compose stop
 ## cURL
 
 curl -X 'GET' \
+
+### Rest
+
   'https://localhost:7179/rest/Permission' \
   -H 'accept: text/plain'
+
+### GraphQL
+
+  curl --request POST \
+  --url <https://localhost:7179/graphql/> \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.4.5' \
+  --data '{"query":"query {\n\treadPermissionTypes {\n\t\tid\n\t\tdescription\n\t}\n}\n"}'
+
+  wget --quiet \
+  --method POST \
+  --header 'User-Agent: insomnia/8.4.5' \
+  --header 'Content-Type: application/json' \
+  --body-data '{"query":"query {\n\treadPermissionTypes {\n\t\tid\n\t\tdescription\n\t}\n}\n"}' \
+  --output-document \
+
+- <https://localhost:7179/graphql/>

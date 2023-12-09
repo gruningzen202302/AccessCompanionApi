@@ -8,7 +8,8 @@ using AccessCompanionApi.Infrastructure;
 using Serilog;
 using Microsoft.AspNetCore.Builder;
 using AccessCompanionApi.GraphQl;
-
+using GraphQL.Server.Ui.Voyager;
+using Microsoft.Extensions.Options;
 
 Environment.SetEnvironmentVariable(
     "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT", 
@@ -24,7 +25,6 @@ Environment.SetEnvironmentVariable(
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog();
-int sessionCount = 0;
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(outputTemplate: " 🛜  {Message:lj}{NewLine}{Exception}")
     .WriteTo.File("../logs/log-.txt", rollingInterval: RollingInterval.Day)
@@ -68,7 +68,22 @@ var app = builder.Build();
 
 app.UseRouting();
 
-app.UseEndpoints(endpoints => endpoints.MapGraphQL());
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGraphQL();
+    endpoints.MapGraphQLVoyager("ui/voyager");
+});
+
+
+//app.UseEndpoints(endpoints => endpoints.MapGraphQL());
+
+
+//app.UseGraphQLVoyager();//path: "/voyager", options: new VoyagerOptions());
+// new GraphQLVoyagerOptions(){
+//     GraphQLEndPoint = "/graphql",
+//     Path = "/voyager"
+// }
+//);
 
 app.UseSwagger();
 app.UseSwaggerUI();
