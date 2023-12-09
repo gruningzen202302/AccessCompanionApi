@@ -1,8 +1,10 @@
 using AccessCompanionApi.Data;
 using AccessCompanionApi.Domain;
+using System.ComponentModel.DataAnnotations;
+using HotChocolate;
 
-namespace  AccessCompanionApi.GraphQl;
 
+namespace AccessCompanionApi.GraphQl;
 public class Query
 {
     //[UseProjection]
