@@ -1,48 +1,66 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/AccessCompanionApi.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "publish",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "publish",
-                "${workspaceFolder}/AccessCompanionApi.sln",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/AccessCompanionApi.sln"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "test",
-            "command": "dotnet",
-            "type": "process",
-            "args": ["test", "${workspaceFolder}/AccessCompanionApi.Test/AccessCompanionApi.Test.csproj"],
-            "problemMatcher": "$msCompile"
+      {
+        "label": "build",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "build",
+          "${workspaceFolder}/AccessCompanionApi.sln",
+          "/property:GenerateFullPaths=true",
+          "/consoleloggerparameters:NoSummary;ForceNoAlign"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "publish",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "publish",
+          "${workspaceFolder}/AccessCompanionApi.sln",
+          "/property:GenerateFullPaths=true",
+          "/consoleloggerparameters:NoSummary;ForceNoAlign"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "watch",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "watch",
+          "run",
+          "--project",
+          "${workspaceFolder}/AccessCompanionApi.sln"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "test",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+          "test",
+          "${workspaceFolder}/AccessCompanionApi.Test/AccessCompanionApi.Test.csproj"
+        ],
+        "problemMatcher": "$msCompile"
+      },
+      {
+        "label": "ngrok",
+        "type": "shell",
+        "command": "ngrok http 5115", // replace 7179 with your localhost port
+        "isBackground": true,
+        "problemMatcher": []
+      },
+      {
+        "label": "build and ngrok",
+        "dependsOn": ["build", "ngrok"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
         }
+      }
     ]
 }

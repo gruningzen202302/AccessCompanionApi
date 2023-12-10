@@ -50,3 +50,17 @@ curl -X 'GET' \
 dotnet tool install --global dotnet-ef
 
 dotnet tool update --global dotnet-ef
+
+## NGROK
+
+brew install ngrok/ngrok/ngrok
+
+ngrok config add-authtoken <token>
+
+- check the network interface that uses wifi
+ifconfig en0
+
+- domain
+ngrok http --domain=accurate-reindeer-daring.ngrok-free.app 80
+
+ngrok http 5115

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Builder;
 using AccessCompanionApi.GraphQl;
 using GraphQL.Server.Ui.Voyager;
 using Microsoft.Extensions.Options;
+using AccessCompanionApi.GraphQl.TypeDescriptors;
 
 Environment.SetEnvironmentVariable(
     "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT", 
@@ -29,6 +30,7 @@ Log.Information("USING SERILOG");
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddType<PermissionTypeDescriptor>()
     .AddProjections()
     ;
 
