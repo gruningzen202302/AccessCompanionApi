@@ -1538,3 +1538,113 @@ FROM [PermissionTypes] AS [p]
 2023-12-09 23:05:23.807 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
 2023-12-09 23:05:24.311 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
 2023-12-09 23:05:24.312 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 509.4972ms
+2023-12-09 23:44:26.196 -03:00 [INF] USING SERILOG
+2023-12-09 23:44:26.865 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:44:26.867 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:44:26.868 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:44:26.868 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:44:26.868 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:44:27.275 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:44:27.305 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 31.2294ms
+2023-12-09 23:44:27.314 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:44:35.127 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 23:44:35.138 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:44:35.167 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:44:35.167 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 40.3661ms
+2023-12-09 23:44:35.338 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 23:44:35.363 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:44:35.804 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:44:35.805 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 466.2121ms
+2023-12-09 23:46:11.907 -03:00 [INF] USING SERILOG
+2023-12-09 23:46:12.612 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:46:12.613 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:46:12.615 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:46:12.615 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:46:12.615 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:46:12.964 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:46:12.998 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 35.2787ms
+2023-12-09 23:46:13.001 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:46:25.148 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5115/ui/voyager - null null
+2023-12-09 23:46:25.162 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:46:25.194 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:46:25.195 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5115/ui/voyager - 200 null text/html 54.4797ms
+2023-12-09 23:46:25.473 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5115/graphql - application/json 1774
+2023-12-09 23:46:25.477 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:46:25.927 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:46:25.927 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5115/graphql - 200 null application/json; charset=utf-8 454.0437ms
+2023-12-09 23:49:16.406 -03:00 [INF] USING SERILOG
+2023-12-09 23:49:16.943 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:49:16.945 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:49:16.947 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:49:16.947 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:49:16.947 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:49:17.246 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:49:17.273 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 27.6894ms
+2023-12-09 23:49:17.280 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:49:28.773 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5115/ui/voyager - null null
+2023-12-09 23:49:28.785 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:49:28.828 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:49:28.828 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5115/ui/voyager - 200 null text/html 55.9537ms
+2023-12-09 23:49:28.972 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5115/graphql - application/json 1774
+2023-12-09 23:49:28.977 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:49:29.429 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:49:29.429 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5115/graphql - 200 null application/json; charset=utf-8 457.9059ms
+2023-12-09 23:52:45.675 -03:00 [INF] USING SERILOG
+2023-12-09 23:52:46.277 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:52:46.279 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:52:46.280 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:52:46.280 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:52:46.280 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:52:46.602 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:52:46.626 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.6647ms
+2023-12-09 23:52:46.633 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:52:55.593 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 23:52:55.602 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:52:55.643 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:52:55.643 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 49.6567ms
+2023-12-09 23:52:55.878 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 23:52:55.882 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:52:56.387 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:52:56.388 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 510.1775ms
+2023-12-09 23:53:07.944 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 23:53:07.945 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:53:07.945 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:53:07.946 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 48.8785ms
+2023-12-09 23:53:08.078 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 23:53:08.078 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:53:08.107 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:53:08.108 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 33.9411ms
+2023-12-09 23:54:57.666 -03:00 [INF] USING SERILOG
+2023-12-09 23:54:58.191 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:54:58.192 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:54:58.194 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:54:58.194 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:54:58.194 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:54:58.472 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:54:58.500 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 28.733ms
+2023-12-09 23:54:58.506 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:55:06.580 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 23:55:06.588 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:55:06.628 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:55:06.629 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 48.947ms
+2023-12-09 23:55:06.804 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 23:55:06.806 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:55:07.226 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:55:07.227 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 423.4844ms
+2023-12-09 23:58:08.372 -03:00 [INF] USING SERILOG
+2023-12-09 23:58:08.964 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-09 23:58:08.966 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-09 23:58:08.967 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:58:08.967 -03:00 [INF] Hosting environment: Development
+2023-12-09 23:58:08.967 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-09 23:58:09.328 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-09 23:58:09.352 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 24.7891ms
+2023-12-09 23:58:09.358 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-09 23:58:17.316 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-09 23:58:17.324 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-09 23:58:17.353 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-09 23:58:17.354 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 37.3301ms
+2023-12-09 23:58:17.545 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-09 23:58:17.548 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:58:18.016 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-09 23:58:18.042 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 498.0425ms

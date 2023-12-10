@@ -31,6 +31,7 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
     .AddType<PermissionTypeDescriptor>()
+    .AddType<PermissionDescriptor>()
     .AddProjections()
     ;
 
