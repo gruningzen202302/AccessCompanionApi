@@ -27,11 +27,6 @@ public class AppDbContext : DbContext, IDbContext{
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            
-            modelBuilder.Entity<PermissionType>()
-                .HasMany(p => p.Permissions)
-                .WithOne(p => p.PermissionType)
-                .HasForeignKey(p => p.PermissionTypeId);
 
         modelBuilder.Entity<Permission>()
             .HasOne(p => p.PermissionType)

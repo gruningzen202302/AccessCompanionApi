@@ -16,14 +16,13 @@ public class PermissionTypeDescriptor : ObjectType<PermissionType>
             .Field(x => x.Permissions)
             .ResolveWith<Resolvers>(x => x.ReadPermissionsByPermissionType(default!, default!))
             .UseDbContext<AppDbContext>()
-            .Description("Gets all the permissions granted for a given permission type. ");
+            ;
     }
     private class Resolvers
     {
         public IQueryable<Permission> ReadPermissionsByPermissionType(PermissionType permissionType, [Service] IDbContext context)
         {
-            return context.Permissions
-            .Where(permission => permission.PermissionTypeId.Equals(permissionType.Id));
+            return new List<Permission>().AsQueryable();
         }
     }
 }
