@@ -1,6 +1,8 @@
 using AccessCompanionApi.Data;
 using AccessCompanionApi.Domain;
 using HotChocolate.Types;
+using HotChocolate;
+using HotChocolate.Data;
 
 namespace AccessCompanionApi.GraphQl.TypeDescriptors;
 

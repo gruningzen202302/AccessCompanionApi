@@ -1,0 +1,80 @@
+# ReadPermissions
+
+curl --request POST \
+  --url https://localhost:7179/graphql/ \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.4.5' \
+  --data '{"query":"query{\n\treadPermissions{\n\t\tpermissionDay\n\t\temployeeSurname\n\n\t}\n}"}'
+  
+query{
+	readPermissions{
+		permissionDay
+		employeeSurname
+
+	}
+}
+
+{
+	"data": {
+		"readPermissions": [
+			{
+				"permissionDay": "2020-12-24T00:00:00.000-03:00",
+				"employeeSurname": "Doe"
+			},
+			{
+				"permissionDay": "2020-12-31T00:00:00.000-03:00",
+				"employeeSurname": "Smith"
+			},
+			{
+				"permissionDay": "2020-10-10T00:00:00.000-03:00",
+				"employeeSurname": "Doe"
+			},
+			{
+				"permissionDay": "2020-10-10T00:00:00.000-03:00",
+				"employeeSurname": "Smith"
+			}
+		]
+	}
+}
+
+
+# ReadPermissionsFiltered
+curl --request POST \
+  --url https://localhost:7179/graphql/ \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.4.5' \
+  --data '{"query":"query{\n\treadPermissions(\n\t\twhere:{employeeSurname:{eq:\"Smith\"}}\n\t)\n\t{\n\t\temployeeForename\n\t\temployeeSurname\n\t\tpermissionDay\n\t}\n}"}'
+  
+
+{"data":{"readPermissions":[{"employeeForename":"Susan","employeeSurname":"Smith","permissionDay":"2020-12-31T00:00:00.000-03:00"},{"employeeForename":"Susan","employeeSurname":"Smith","permissionDay":"2020-10-10T00:00:00.000-03:00"}]}}
+
+# ReadPermissionsSorted
+curl --request POST \
+  --url https://localhost:7179/graphql/ \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/8.4.5' \
+  --data '{"query":"query{\n\treadPermissions(\n\t\twhere:{employeeSurname:{eq:\"Smith\"}}\n\t)\n\t{\n\t\temployeeForename\n\t\temployeeSurname\n\t\tpermissionDay\n\t}\n}"}'
+
+{
+	"data": {
+		"readPermissions": [
+			{
+				"employeeSurname": "Doe",
+				"permissionDay": "2020-10-10T00:00:00.000-03:00"
+			},
+			{
+				"employeeSurname": "Smith",
+				"permissionDay": "2020-10-10T00:00:00.000-03:00"
+			},
+			{
+				"employeeSurname": "Doe",
+				"permissionDay": "2020-12-24T00:00:00.000-03:00"
+			},
+			{
+				"employeeSurname": "Smith",
+				"permissionDay": "2020-12-31T00:00:00.000-03:00"
+			}
+		]
+	}
+}
+

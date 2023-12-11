@@ -5,15 +5,15 @@ GO
 SELECT *
 from [dbo].[PermissionTypes]
 
-insert into dbo.Permissions
-  (PermissionTypeId,EmployeeForename,EmployeeSurname,PermissionDay)
---values (3, 'John', 'Doe', '2020-12-24')
-values
-  --(3, 'Susan', 'Smith', '2020-12-31')
---values 
-(1, 'John', 'Doe', '2020-10-10')
-,
-(3, 'Susan', 'Smith', '2020-10-10')
+-- insert into dbo.Permissions
+--   (PermissionTypeId,EmployeeForename,EmployeeSurname,PermissionDay)
+-- --values (3, 'John', 'Doe', '2020-12-24')
+-- values
+--   --(3, 'Susan', 'Smith', '2020-12-31')
+-- --values 
+-- (1, 'John', 'Doe', '2020-10-10')
+-- ,
+-- (3, 'Susan', 'Smith', '2020-10-10')
 
 select * from dbo.Permissions
 
