@@ -5,13 +5,19 @@ using AccessCompanionApi.Dto.Output;
 using AccessCompanionApi.Domain;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using HotChocolate.Subscriptions;
 
 namespace AccessCompanionApi.GraphQl;
 public class Mutation
 {
 
     //[UseDbContext(typeof(AppDbContext))]
-    public async Task<CreatePermissionPayload> CreatePermission(CreatePermissionInput createPermissionInput, [Service] IDbContext context)
+    public async Task<CreatePermissionPayload> CreatePermission(
+        CreatePermissionInput createPermissionInput,
+        [Service] IDbContext context,
+        [Service] ITopicEventSender eventSender,
+        CancellationToken cancellationToken
+        )
     {
         var permission = new Permission
         {
@@ -29,7 +35,7 @@ public class Mutation
             };
             var entities = context.Permissions.ToList();
             entities.Add(permission);
-            var saved = await context.SaveChangesAsync();
+            var saved = await context.SaveChangesAsync(true, cancellationToken);
         }
         catch (System.Exception e)
         {
@@ -38,6 +44,7 @@ public class Mutation
             Log.Information(e.StackTrace ?? string.Empty);
             throw;
         }
+        await eventSender.SendAsync(nameof(Subscription.OnPermissionCreated), permission, cancellationToken);
         return new CreatePermissionPayload(permission);
     }
 }

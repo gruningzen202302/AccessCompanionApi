@@ -55,9 +55,11 @@ builder.Services
     .AddMutationType<Mutation>()
     .AddType<PermissionTypeDescriptor>()
     .AddType<PermissionDescriptor>()
+    .AddSubscriptionType<Subscription>()
     .AddProjections()
     .AddFiltering()
     .AddSorting()
+    .AddInMemorySubscriptions()
     ;
 
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
@@ -89,5 +91,7 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.MapControllers();
+
+app.UseWebSockets();
 
 app.Run();
