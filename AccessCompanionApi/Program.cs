@@ -36,7 +36,7 @@ builder.Services.AddCors(options=>{
     });
 });
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+var connectionStringFromAzure = builder.Configuration.GetConnectionString("DefaultConnection");
 var connectionStringFromContainer = builder.Configuration.GetConnectionString("ContainerConnection");
 
 // var context = builder.Services.AddDbContext<AppDbContext>(options => {
@@ -62,12 +62,13 @@ builder.Services
 
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
 {
-    options.UseSqlServer(connectionString, sqlServerOptionsAction: sqlOptions =>
+    options.UseSqlServer(connectionStringFromContainer, sqlServerOptionsAction: sqlOptions =>
     {
         sqlOptions.EnableRetryOnFailure();
     });
 });
-builder.Services.AddScoped<IDbContext, AppDbContext>();
+builder.Services.AddSingleton<IDbContext, AppDbContext>();
+//builder.Services.AddScoped<IPermissionRepository, PermissionRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

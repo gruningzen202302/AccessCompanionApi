@@ -1,17 +1,19 @@
 using AccessCompanionApi.Abstractions;
 using AccessCompanionApi.Data;
 using AccessCompanionApi.Domain;
+using Microsoft.EntityFrameworkCore;
 
 namespace AccessCompanionApi.Infrastructure;
 
 public class PermissionRepository : IPermissionRepository
 {
     private readonly IDbContext _context;
-    public PermissionRepository() { _context = new MockContext();}
-    public PermissionRepository(AppDbContext context)
-    {
-        _context = context;
-    }
+    public PermissionRepository() { _context = new MockContext(); }
+    // public PermissionRepository(AppDbContext context)
+    // {
+    //     _context = context;
+    // }
+    public PermissionRepository(IDbContext context) => _context = context;
     public void Create(Permission entity)
     {
         _context.Permissions.ToHashSet<Permission>().Add(entity);
@@ -32,7 +34,10 @@ public class PermissionRepository : IPermissionRepository
     {
         throw new NotImplementedException();
     }
-    IQueryable<Permission> IRepository<Permission>.ReadAll() => _context.Permissions.AsQueryable();
+    IQueryable<Permission> IRepository<Permission>.ReadAll() => _context
+    .Permissions
+    .Include(x => x.PermissionType)
+    .AsQueryable();
 
     Permission IRepository<Permission>.ReadById(int id)=> _context
         .Permissions

@@ -22,8 +22,13 @@ public class Mutation
         };
         try
         {
-
-            context.Permissions.ToList().Add(permission);
+            permission.PermissionType = await context.PermissionTypes.FirstOrDefaultAsync(x => x.Id == createPermissionInput.PermissionTypeId) ?? new PermissionType()
+            {
+                Description = "No description",
+                Permissions = new List<Permission>()
+            };
+            var entities = context.Permissions.ToList();
+            entities.Add(permission);
             var saved = await context.SaveChangesAsync();
         }
         catch (System.Exception e)
