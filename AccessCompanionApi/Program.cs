@@ -52,6 +52,7 @@ var connectionStringFromContainer = builder.Configuration.GetConnectionString("C
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
+    .AddMutationType<Mutation>()
     .AddType<PermissionTypeDescriptor>()
     .AddType<PermissionDescriptor>()
     .AddProjections()
@@ -61,7 +62,7 @@ builder.Services
 
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
 {
-    options.UseSqlServer(connectionStringFromContainer, sqlServerOptionsAction: sqlOptions =>
+    options.UseSqlServer(connectionString, sqlServerOptionsAction: sqlOptions =>
     {
         sqlOptions.EnableRetryOnFailure();
     });

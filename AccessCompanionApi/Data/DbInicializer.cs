@@ -14,10 +14,12 @@ namespace AccessCompanionApi.Data
                     new()
                     {
                         Description = "Permission used by default when no other type is specified",
+                        Permissions = new List<Permission>()
                     },
                     new()
                     {
                         Description = "Permission used to access the coworking area",
+                        Permissions = new List<Permission>()
                     }
                 };
 

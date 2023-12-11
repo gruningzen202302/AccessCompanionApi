@@ -16,7 +16,11 @@ public class PermissionTypeShould
     public void ReadPermissionType__PermissionExists__ReturnsPermissionType()
     {
         // Arrange
-        var permissionType = new PermissionType() { Description = "Turn to use coworking area"};
+        var permissionType = new PermissionType()
+        {
+            Description = "Turn to use coworking area",
+            Permissions = new List<Permission>()
+        };
         Assert.Equal("Turn to use coworking area", permissionType.Description);
 
         var permissionTypeRepository = new Mock<IPermissionTypeRepository>();

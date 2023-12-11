@@ -1,0 +1,463 @@
+2023-12-11 00:02:29.840 -03:00 [INF] USING SERILOG
+2023-12-11 00:02:30.603 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:02:30.605 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:02:30.606 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:02:30.606 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:02:30.606 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:02:31.426 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:02:31.452 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 26.9931ms
+2023-12-11 00:02:31.465 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:04:24.326 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:04:24.354 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:24.979 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:24.981 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 655.5301ms
+2023-12-11 00:04:27.709 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:04:27.714 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:29.000 -03:00 [INF] Executed DbCommand (55ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay]
+FROM [Permissions] AS [p]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:04:29.032 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:29.037 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1328.1664ms
+2023-12-11 00:04:29.368 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:04:29.369 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:29.424 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:04:29.425 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 56.7947ms
+2023-12-11 00:05:02.127 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:05:02.130 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:05:58.173 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:05:58.397 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:05:58.684 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:05:58.712 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 539.4206ms
+2023-12-11 00:05:58.719 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:05:58.719 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 499 null null 56594.4214ms
+2023-12-11 00:06:36.147 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:06:36.193 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:36.949 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay]
+FROM [Permissions] AS [p]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:06:36.951 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:36.952 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 813.9609ms
+2023-12-11 00:06:37.201 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:06:37.201 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:37.305 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:37.305 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 104.4384ms
+2023-12-11 00:06:58.994 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:06:58.998 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:59.271 -03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay]
+FROM [Permissions] AS [p]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:06:59.273 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:59.274 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 280.2655ms
+2023-12-11 00:06:59.583 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:06:59.583 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:59.632 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:06:59.635 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 50.3258ms
+2023-12-11 00:07:26.105 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:07:26.109 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:07:26.414 -03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay]
+FROM [Permissions] AS [p]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:07:26.416 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:07:26.416 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 311.7632ms
+2023-12-11 00:07:26.714 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:07:26.715 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:07:26.721 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:07:26.721 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 6.8088ms
+2023-12-11 00:08:24.488 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 209
+2023-12-11 00:08:24.494 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:08:25.005 -03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], CAST(1 AS bit), [p0].[Description]
+FROM [Permissions] AS [p]
+INNER JOIN [PermissionTypes] AS [p0] ON [p].[PermissionTypeId] = [p0].[Id]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:08:25.032 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:08:25.032 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null application/graphql-response+json; charset=utf-8 544.9285ms
+2023-12-11 00:08:25.360 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:08:25.361 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:08:25.440 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:08:25.441 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 80.2856ms
+2023-12-11 00:08:46.380 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 209
+2023-12-11 00:08:46.382 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:09:09.476 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], CAST(1 AS bit), [p0].[Description]
+FROM [Permissions] AS [p]
+INNER JOIN [PermissionTypes] AS [p0] ON [p].[PermissionTypeId] = [p0].[Id]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:09:28.953 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:09:28.955 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:09:29.183 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:09:29.183 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 2349.0376ms
+2023-12-11 00:09:29.185 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:09:29.185 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 499 null null 42807.0414ms
+2023-12-11 00:11:36.494 -03:00 [INF] USING SERILOG
+2023-12-11 00:11:37.659 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:11:37.661 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:11:37.663 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:11:37.663 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:11:37.663 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:11:39.361 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:11:39.396 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 35.7401ms
+2023-12-11 00:11:39.406 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:12:08.507 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ui/voyager - null null
+2023-12-11 00:12:08.521 -03:00 [INF] Executing endpoint 'GraphQL Voyager'
+2023-12-11 00:12:08.568 -03:00 [INF] Executed endpoint 'GraphQL Voyager'
+2023-12-11 00:12:08.568 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ui/voyager - 200 null text/html 61.029ms
+2023-12-11 00:12:08.881 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql - application/json 1774
+2023-12-11 00:12:08.912 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:12:56.296 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:12:56.325 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql - 200 null application/json; charset=utf-8 47471.026ms
+2023-12-11 00:18:28.273 -03:00 [INF] USING SERILOG
+2023-12-11 00:18:28.958 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:18:28.959 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:18:28.961 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:18:28.961 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:18:28.961 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:18:29.631 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:18:29.661 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 31.2555ms
+2023-12-11 00:18:29.669 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:18:37.849 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 209
+2023-12-11 00:18:37.897 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:18:54.697 -03:00 [INF] Executed DbCommand (50ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], CAST(1 AS bit), [p0].[Description]
+FROM [Permissions] AS [p]
+INNER JOIN [PermissionTypes] AS [p0] ON [p].[PermissionTypeId] = [p0].[Id]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:18:54.778 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:18:54.791 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 500 null application/graphql-response+json; charset=utf-8 16942.8501ms
+2023-12-11 00:18:56.445 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:18:56.452 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:18:56.513 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:18:56.513 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 68.6469ms
+2023-12-11 00:24:42.421 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 162
+2023-12-11 00:24:42.425 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:24:42.788 -03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay]
+FROM [Permissions] AS [p]
+WHERE [p].[EmployeeSurname] = @__p_0
+2023-12-11 00:24:42.790 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:24:42.791 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 390.9842ms
+2023-12-11 00:24:42.948 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:24:42.948 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:24:43.009 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:24:43.010 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 61.844ms
+2023-12-11 00:26:11.259 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:26:11.266 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:26:11.425 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:26:11.427 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 168.0251ms
+2023-12-11 00:26:17.442 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:26:17.447 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:26:17.613 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:26:17.615 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 173.4355ms
+2023-12-11 00:36:36.029 -03:00 [INF] USING SERILOG
+2023-12-11 00:36:36.760 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:36:36.762 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:36:36.763 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:36:36.763 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:36:36.763 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:36:38.179 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:36:38.253 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 78.3666ms
+2023-12-11 00:36:38.262 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:37:27.808 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:37:27.817 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:37:28.376 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:37:28.378 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 570.1821ms
+2023-12-11 00:39:30.118 -03:00 [INF] USING SERILOG
+2023-12-11 00:39:30.674 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:39:30.676 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:39:30.677 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:39:30.678 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:39:30.678 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:39:31.120 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:39:31.143 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 23.6684ms
+2023-12-11 00:39:31.152 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:40:04.426 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:40:04.438 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:40:05.003 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:40:05.004 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 578.3571ms
+2023-12-11 00:41:58.061 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:41:58.077 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:41:58.284 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:41:58.284 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 274.0055ms
+2023-12-11 00:42:20.255 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:42:20.259 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:42:20.318 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:42:20.319 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 63.8407ms
+2023-12-11 00:43:33.478 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 316
+2023-12-11 00:43:33.481 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:43:53.838 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], [p].[PermissionTypeId]
+FROM [Permissions] AS [p]
+2023-12-11 00:44:09.345 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:44:09.347 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:44:09.472 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:44:09.474 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 128.8827ms
+2023-12-11 00:44:09.475 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:44:09.483 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 499 null null 36031.4068ms
+2023-12-11 00:45:09.852 -03:00 [INF] USING SERILOG
+2023-12-11 00:45:10.500 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:45:10.502 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:45:10.503 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:45:10.504 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:45:10.504 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:45:11.118 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:45:11.158 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 40.8075ms
+2023-12-11 00:45:11.167 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:45:16.829 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:45:16.845 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:17.485 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:17.486 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 657.0202ms
+2023-12-11 00:45:19.782 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 316
+2023-12-11 00:45:19.786 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:20.788 -03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], [p].[PermissionTypeId]
+FROM [Permissions] AS [p]
+2023-12-11 00:45:20.855 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:20.861 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1078.5597ms
+2023-12-11 00:45:21.188 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:45:21.189 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:21.250 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:45:21.250 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 61.9167ms
+2023-12-11 00:50:12.233 -03:00 [INF] USING SERILOG
+2023-12-11 00:50:12.928 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:50:12.930 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:50:12.931 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:50:12.931 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:50:12.931 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:50:13.368 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:50:13.409 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 42.8062ms
+2023-12-11 00:50:13.418 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:50:26.881 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 316
+2023-12-11 00:50:26.914 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:50:28.956 -03:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], [p].[PermissionTypeId]
+FROM [Permissions] AS [p]
+2023-12-11 00:50:29.041 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:50:29.046 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 2166.1546ms
+2023-12-11 00:50:29.402 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:50:29.403 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:50:29.431 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:50:29.459 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 77.3822ms
+2023-12-11 00:52:26.418 -03:00 [INF] USING SERILOG
+2023-12-11 00:52:40.901 -03:00 [INF] USING SERILOG
+2023-12-11 00:52:42.368 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-11 00:52:42.467 -03:00 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-11 00:52:42.483 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-11 00:52:42.487 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-11 00:52:42.586 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-12-11 00:52:42.623 -03:00 [INF] Applying migration '20231211035227_feat_refactor_table_prop'.
+2023-12-11 00:52:43.079 -03:00 [ERR] Failed executing DbCommand (253ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description') AND [object_id] = OBJECT_ID(N'[PermissionTypes]'))
+    SET IDENTITY_INSERT [PermissionTypes] ON;
+INSERT INTO [PermissionTypes] ([Id], [Description])
+VALUES (1, N'Permision used by default when no other type is specified'),
+(2, N'Permission used to access the coworking area'),
+(3, N'Permission used to access the meeting room');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description') AND [object_id] = OBJECT_ID(N'[PermissionTypes]'))
+    SET IDENTITY_INSERT [PermissionTypes] OFF;
+2023-12-11 00:57:28.680 -03:00 [INF] USING SERILOG
+2023-12-11 00:57:29.798 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 00:57:29.801 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 00:57:29.803 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 00:57:29.804 -03:00 [INF] Hosting environment: Development
+2023-12-11 00:57:29.804 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 00:57:30.874 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 00:57:30.930 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 57.7019ms
+2023-12-11 00:57:30.943 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 00:57:44.255 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 316
+2023-12-11 00:57:44.268 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:57:46.129 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], [p].[PermissionTypeId]
+FROM [Permissions] AS [p]
+2023-12-11 00:57:46.227 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:57:46.235 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1979.6922ms
+2023-12-11 00:57:46.856 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 00:57:46.869 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:57:46.945 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 00:57:46.946 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 89.7176ms
+2023-12-11 01:00:33.389 -03:00 [INF] USING SERILOG
+2023-12-11 01:00:49.970 -03:00 [INF] A transient exception occurred during execution. The operation will be retried after 5000ms.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'sqldb-calendar-gps' on server 'sqlserver-calendar-southbr-prod-001.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{3872E99F-51EE-420B-82DE-D68FA5F08A95}'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:6304c783-6480-4395-b583-383d4fd467ef
+Error Number:40613,State:1,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'sqldb-calendar-gps' on server 'sqlserver-calendar-southbr-prod-001.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{3872E99F-51EE-420B-82DE-D68FA5F08A95}'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:6304c783-6480-4395-b583-383d4fd467ef
+Error Number:40613,State:1,Class:20
+2023-12-11 01:01:10.494 -03:00 [INF] A transient exception occurred during execution. The operation will be retried after 6038ms.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'sqldb-calendar-gps' on server 'sqlserver-calendar-southbr-prod-001.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{C9448B27-0461-48FF-AB52-F1A5D0A62581}'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:1e314d1b-8402-46b9-b622-8011f3cea341
+Error Number:40613,State:1,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): Database 'sqldb-calendar-gps' on server 'sqlserver-calendar-southbr-prod-001.database.windows.net' is not currently available.  Please retry the connection later.  If the problem persists, contact customer support, and provide them the session tracing ID of '{C9448B27-0461-48FF-AB52-F1A5D0A62581}'.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+ClientConnectionId:1e314d1b-8402-46b9-b622-8011f3cea341
+Error Number:40613,State:1,Class:20
+2023-12-11 01:01:22.485 -03:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-11 01:01:22.567 -03:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-11 01:01:22.611 -03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-12-11 01:01:22.653 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-12-11 01:01:22.756 -03:00 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-12-11 01:01:22.772 -03:00 [INF] Applying migration '20231209210353_feat_add_seed_registers'.
+2023-12-11 01:01:22.903 -03:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231209210353_feat_add_seed_registers', N'8.0.0');
+2023-12-11 01:01:22.955 -03:00 [INF] Applying migration '20231210041523_feat_refactor_table_link'.
+2023-12-11 01:01:23.043 -03:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231210041523_feat_refactor_table_link', N'8.0.0');
+2023-12-11 01:01:23.090 -03:00 [INF] Applying migration '20231211035227_feat_refactor_table_prop'.
+2023-12-11 01:01:23.226 -03:00 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description') AND [object_id] = OBJECT_ID(N'[PermissionTypes]'))
+    SET IDENTITY_INSERT [PermissionTypes] ON;
+INSERT INTO [PermissionTypes] ([Id], [Description])
+VALUES (1, N'Permision used by default when no other type is specified'),
+(2, N'Permission used to access the coworking area'),
+(3, N'Permission used to access the meeting room');
+IF EXISTS (SELECT * FROM [sys].[identity_columns] WHERE [name] IN (N'Id', N'Description') AND [object_id] = OBJECT_ID(N'[PermissionTypes]'))
+    SET IDENTITY_INSERT [PermissionTypes] OFF;
+2023-12-11 01:01:23.269 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20231211035227_feat_refactor_table_prop', N'8.0.0');
+2023-12-11 01:08:14.637 -03:00 [INF] USING SERILOG
+2023-12-11 01:08:15.576 -03:00 [INF] Now listening on: https://localhost:7179
+2023-12-11 01:08:15.578 -03:00 [INF] Now listening on: http://localhost:5115
+2023-12-11 01:08:15.580 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 01:08:15.580 -03:00 [INF] Hosting environment: Development
+2023-12-11 01:08:15.580 -03:00 [INF] Content root path: /Users/qimono/source/repos/AccessCompanionApi/AccessCompanionApi
+2023-12-11 01:08:16.766 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7179/ - null null
+2023-12-11 01:08:16.955 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7179/ - 404 0 null 195.6612ms
+2023-12-11 01:08:16.972 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7179/, Response status code: 404
+2023-12-11 01:08:22.453 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 316
+2023-12-11 01:08:22.461 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 01:08:24.355 -03:00 [INF] Executed DbCommand (68ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[EmployeeForename], [p].[EmployeeSurname], [p].[PermissionDay], [p].[PermissionTypeId]
+FROM [Permissions] AS [p]
+2023-12-11 01:08:24.406 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 01:08:24.414 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 1959.8808ms
+2023-12-11 01:08:24.745 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7179/graphql/ - application/json 1811
+2023-12-11 01:08:24.748 -03:00 [INF] Executing endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 01:08:24.784 -03:00 [INF] Executed endpoint 'Hot Chocolate GraphQL Pipeline'
+2023-12-11 01:08:24.785 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7179/graphql/ - 200 null application/graphql-response+json; charset=utf-8 39.9126ms

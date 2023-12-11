@@ -7,7 +7,11 @@ public class Permission:EntityBase
 {
     public Permission()
     {
-        PermissionType = new () { Description = "Default permission type" };
+        PermissionType = new()
+        {
+            Description = "Default permission type",
+            Permissions = new List<Permission>()
+        };
     }
 
     public int PermissionTypeId { get; set; }

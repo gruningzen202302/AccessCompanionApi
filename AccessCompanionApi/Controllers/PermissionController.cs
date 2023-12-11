@@ -38,7 +38,11 @@ namespace AccessCompanionApi.Controllers
                     EmployeeForename = Convert.ToChar(id).ToString() + ". ",
                     EmployeeSurname = "Smith",
                     PermissionDay = DateTime.Now.AddDays(index).Date,
-                    PermissionType = new() { Description = PermissionTypeDescriptions[Random.Shared.Next(PermissionTypeDescriptions.Length)] }
+                    PermissionType = new PermissionType()
+                    {
+                        Description = PermissionTypeDescriptions[Random.Shared.Next(PermissionTypeDescriptions.Length)],
+                        Permissions = new List<Permission>()
+                    }
                 })
                 .ToArray();
         }

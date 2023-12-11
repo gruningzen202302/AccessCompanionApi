@@ -23,10 +23,12 @@ public class MockContext : DbContext, IDbContext
         PermissionType defaultPermissionType = new(){
             Id = 1,
             Description = "Permision used by default when no other type is specified",
+            Permissions = new List<Permission>(),
         };
         PermissionType coworkingPermissionType = new(){
             Id = 2,
             Description = "Permission used to access the coworking area",
+            Permissions = new List<Permission>(),
         };
         var permissionTypes = new PermissionType[]{
             defaultPermissionType, 

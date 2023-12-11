@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 namespace AccessCompanionApi.Domain;
 
 public class PermissionType: EntityBase{
@@ -6,15 +7,15 @@ public class PermissionType: EntityBase{
 
     //public TimeSpan Duration { get; set; }
 
-    public virtual ICollection<Permission> Permissions { get; set; }
+    public virtual required ICollection<Permission> Permissions { get; set; }
 
     public PermissionType()
     {
-        //   Permissions = new HashSet<Permission>();
+        Permissions = new List<Permission>();
     }
     public PermissionType(string description)
     {
-        //    Permissions = new HashSet<Permission>();
+        Permissions = new List<Permission>();
         Description = description;
     }
 }

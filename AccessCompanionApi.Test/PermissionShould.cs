@@ -9,7 +9,10 @@ public class PermissionShould{
         //Act
         var permission= new Permission(){
             Id = 0,
-            PermissionType = new PermissionType(){Description = "Turn to use coworking area"},
+            PermissionType = new PermissionType(){
+                Description = "Turn to use coworking area",
+                Permissions = new List<Permission>()
+                },
             PermissionDay = DateTime.Now,
             EmployeeForename = "John",
             EmployeeSurname = "Doe",
